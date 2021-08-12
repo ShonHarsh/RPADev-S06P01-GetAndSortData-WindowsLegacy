@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1224,3163" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1224,4723" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -86,14 +86,14 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Practice 1 - Get and Sort Data&#xA;&#xA;Create a workflow that generates 10 fake names along with their details and then sorts them in an excel file that will be organized in 5 columns namely: Name, Phone, Birth-date, Email-Address and City, State, Zip. After sorting all the details, the workflow should continue to save the excel file in a specified folder.&#xA;&#xA;Notes: &#xA;&#xA;Use the www.fakepersongenerator.com site to generate the 10 fake names along with their details.&#xA;All selectors must not contain idx attributes.&#xA;All of the activities starting with the first record generation to the last activity which is saving the excel file in a specific folder should be processed in one workflow execution." DisplayName="Sequence Main" sap:VirtualizedContainerService.HintSize="598,2998" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Practice 1 - Get and Sort Data&#xA;&#xA;Create a workflow that generates 10 fake names along with their details and then sorts them in an excel file that will be organized in 5 columns namely: Name, Phone, Birth-date, Email-Address and City, State, Zip. After sorting all the details, the workflow should continue to save the excel file in a specified folder.&#xA;&#xA;Notes: &#xA;&#xA;Use the www.fakepersongenerator.com site to generate the 10 fake names along with their details.&#xA;All selectors must not contain idx attributes.&#xA;All of the activities starting with the first record generation to the last activity which is saving the excel file in a specific folder should be processed in one workflow execution." DisplayName="Sequence Main" sap:VirtualizedContainerService.HintSize="694,4558" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch sap2010:Annotation.AnnotationText="The main try catch block to catch the exceptions." DisplayName="Try Catch Main" sap:VirtualizedContainerService.HintSize="556,2714" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="The main try catch block to catch the exceptions." DisplayName="Try Catch Main" sap:VirtualizedContainerService.HintSize="652,4274" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Variables>
         <Variable x:TypeArguments="x:String" Name="filePath">
           <Variable.Default>
@@ -113,7 +113,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Sequence Try Catch" sap:VirtualizedContainerService.HintSize="518,2456" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <Sequence DisplayName="Sequence Try Catch" sap:VirtualizedContainerService.HintSize="614,4016" sap2010:WorkflowViewState.IdRef="Sequence_9">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:Int32" Name="dataPoints">
               <Variable.Default>
@@ -126,7 +126,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Sequence File" sap:VirtualizedContainerService.HintSize="476,213" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Sequence File Select" sap:VirtualizedContainerService.HintSize="572,213" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Object" Name="dialogText">
                 <Variable.Default>
@@ -159,7 +159,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:SelectFile>
           </Sequence>
-          <Sequence DisplayName="Sequence DataTable" sap:VirtualizedContainerService.HintSize="476,193" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Sequence DataTable Build" sap:VirtualizedContainerService.HintSize="572,193" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -178,27 +178,27 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:BuildDataTable>
           </Sequence>
-          <Sequence DisplayName="Sequence Browser" sap:VirtualizedContainerService.HintSize="476,1295" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Sequence Browser Items" sap:VirtualizedContainerService.HintSize="572,2824" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Fake Person/Name Generator | User Identity, Account and Profile Generator" sap:VirtualizedContainerService.HintSize="434,1203" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Fake Person Generator" sap:VirtualizedContainerService.HintSize="530,2732" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do Browser Items" sap:VirtualizedContainerService.HintSize="382,987" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Do Browser Items" sap:VirtualizedContainerService.HintSize="496,2516" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InterruptibleDoWhile DisplayName="Do While DataPoints" sap:VirtualizedContainerService.HintSize="340,893" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
+                    <ui:InterruptibleDoWhile DisplayName="Do While DataPoints" sap:VirtualizedContainerService.HintSize="454,2422" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_1">
                       <ui:InterruptibleDoWhile.Body>
-                        <Sequence DisplayName="Body DataPoints" sap:VirtualizedContainerService.HintSize="304,728" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence DisplayName="Body DataPoints" sap:VirtualizedContainerService.HintSize="418,2257" sap2010:WorkflowViewState.IdRef="Sequence_12">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="dataPointName">
                               <Variable.Default>
@@ -241,7 +241,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign DisplayName="Decrement DataPoints" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign sap2010:Annotation.AnnotationText="This is the count for the while loop which is set in the variables pane." DisplayName="Decrement DataPoints" sap:VirtualizedContainerService.HintSize="376,102" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">
                                 <mca:CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">dataPoints</mca:CSharpReference>
@@ -252,8 +252,13 @@
                                 <mca:CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">dataPoints - 1</mca:CSharpValue>
                               </InArgument>
                             </Assign.Value>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <uix:NClick ClickType="Single" DelayAfter="0" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                          <uix:NClick ClickType="Single" DelayAfter="0" DisplayName="Click 'Generate'" sap:VirtualizedContainerService.HintSize="376,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/" DesignTimeRectangle="1209, 262, 120, 30" ElementType="Button" FriendlyName="'Generate'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Generate' check:text='Generate' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAAiCAYAAACdmr05AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJTSURBVHhe7ZtNTsMwEIU5FQvWbOEeXKoLxIIFXKC3yIptpewqRKtSqWqjdvD4L2N7klRIECeeJz2peOzU9TczDVJzA6KiJMALUwC8+fyA7+UTbF7u4Ov5VjxhI0NkiUypPHAM4KTN6z1s3x5g+/4onrIVQ2SJTCl0D1xXNsLmFosna2SKbJ08cMwEqewZGitdsXXywLHvswvEkzeydRLgBViAF2YBXpgFeGEW4IU5Y+ALaE52Q141HNm5mXhVA5wqOHCxTJwn8KqCi9rHZb0Ixg/rvRrdQ1ORuTlZgP/GprJj2M7HXRxbwtnuW2u39DGdILsq6BR8EjnRZMLr1tC4uAOJUAPZrhOMk04UzT+v7PhIzg+4ru5rW7eB3R5imCwOpo/rw2+h6jitSB13720TiSRQvD6Zg/HO6ynrzzZuh8oPeHxoPTYVTICgScIkQIMEwdfp4bcdJE4m3jifB26SL17P7vkfPQngrlK9bFwfNqsrgNv7BE6DwOO1LHCznpUAJx5o6RRiUF2Mh4H3tVcGOAHtxrsrvCdhRnR+wAdu2ijEFGj3XDNGIQwBSeP6elGCDbX0rs8xljMErmwrKTksPFBUVEV0Xn9ChBB1POgm/QkRX8+sV2KB27+DLjJ+EuQJXNscTiimBcffpzGQHuDo+D6gjaVzkz0p0GHSmDXJfwJEY1d8xsDFf2EBXpgFeGEW4IVZgBdmAV6YWeDyM+WZuutnyvIgwjzd+SCCPGo0M2NlK5bIlH3UCIUBXelqEvZ98XSNDJElhY0KgIvmLwFelAB+ALn8ZBuT44SqAAAAAElFTkSuQmCC" InformativeScreenshot="d3596ed19a052dafe6efea6b4ca1ce84.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fake Person/Name Generator | User Identity, Account and Profile Generator' /&gt;" SearchSteps="FuzzySelector, Image">
                                 <uix:TargetAnchorable.Anchors>
@@ -265,12 +270,12 @@
                             </uix:NClick.Target>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NClick>
-                          <uix:NGetText ContinueOnError="False" DisplayName="Name" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="NGetText_3" Timeout="1000">
+                          <uix:NGetText ContinueOnError="False" DisplayName="Name" sap:VirtualizedContainerService.HintSize="376,166" sap2010:WorkflowViewState.IdRef="NGetText_3" Timeout="1000">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/Index/generate" DesignTimeRectangle="721, 540, 110, 16" FriendlyName="'Angela J Aldrich'" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='B' type='' /&gt;" InformativeScreenshot="b4e460624a8e2d2655dd6b5ca2a79cd4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fake Person/Name Generator | User Identity, Account and Profile Generator' /&gt;" SearchSteps="FuzzySelector">
                                 <uix:TargetAnchorable.Anchors>
@@ -287,12 +292,12 @@
                             </uix:NGetText.Text>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <uix:NGetText DisplayName="Phone" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="NGetText_4">
+                          <uix:NGetText DisplayName="Phone" sap:VirtualizedContainerService.HintSize="376,166" sap2010:WorkflowViewState.IdRef="NGetText_4">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/Index/generate" DesignTimeRectangle="988, 520, 87, 16" FriendlyName="'724-469-5979'" FullSelectorArgument="&lt;webctrl idx='7' isleaf='1' tag='B' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' isleaf='1' tag='B' /&gt;" InformativeScreenshot="9f587b32c805f3347d1feade134b5f27.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fake Person/Name Generator | User Identity, Account and Profile Generator' /&gt;" SearchSteps="FuzzySelector">
                                 <uix:TargetAnchorable.Anchors>
@@ -309,12 +314,12 @@
                             </uix:NGetText.Text>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <uix:NGetText DisplayName="Birthdate" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="NGetText_5">
+                          <uix:NGetText DisplayName="Birthdate" sap:VirtualizedContainerService.HintSize="376,166" sap2010:WorkflowViewState.IdRef="NGetText_5">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/Index/generate" DesignTimeRectangle="916, 428, 453, 20" ElementType="Text" FriendlyName="'Birthday: 8/10/1980'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='4' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' type='' tag='P' aaname='Birthday:  ( years old)' /&gt;" InformativeScreenshot="8f4e705214160f606b57f26cb4cf738b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fake Person/Name Generator | User Identity, Account and Profile Generator' /&gt;" SearchSteps="FuzzySelector" />
                             </uix:NGetText.Target>
@@ -325,12 +330,12 @@
                             </uix:NGetText.Text>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <Assign DisplayName=" Birthdate Substring" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign DisplayName=" Birthdate Substring" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">
                                 <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">dataPointBirthdate</mca:CSharpReference>
@@ -342,7 +347,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <uix:NGetText DisplayName="Email" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="NGetText_6">
+                          <uix:NGetText DisplayName="Email" sap:VirtualizedContainerService.HintSize="376,166" sap2010:WorkflowViewState.IdRef="NGetText_6">
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.fakepersongenerator.com/Index/generate" DesignTimeRectangle="922, 636, 479, 34" ElementType="InputBox" FriendlyName="'elenor1973@yahoo.com'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' type='text' aaname='' /&gt;" InformativeScreenshot="d182f88bf7fc99b8f2bb419635854bac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fake Person/Name Generator | User Identity, Account and Profile Generator' /&gt;" SearchSteps="FuzzySelector">
                                 <uix:TargetAnchorable.Anchors>
@@ -359,18 +364,18 @@
                             </uix:NGetText.Text>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
-                          <Sequence sap2010:Annotation.AnnotationText="The city state and zip require some parses." DisplayName="City State Zip" sap:VirtualizedContainerService.HintSize="262,64" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence sap2010:Annotation.AnnotationText="The city state and zip require some parses." DisplayName="City State Zip" sap:VirtualizedContainerService.HintSize="376,789" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="s:String[]" Name="dataCityStateZipArray" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
@@ -391,7 +396,7 @@
                                 </OutArgument>
                               </uix:NGetText.Text>
                             </uix:NGetText>
-                            <Assign DisplayName="Substring" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign DisplayName="Substring Out Labels" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">
                                   <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">dataPointCityStateZip</mca:CSharpReference>
@@ -403,7 +408,7 @@
                                 </InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign DisplayName="Split" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                            <Assign DisplayName="Comma Split" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:String[]">
                                   <mca:CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">dataCityStateZipArray</mca:CSharpReference>
@@ -452,7 +457,7 @@
                               </Assign.Value>
                             </Assign>
                           </Sequence>
-                          <ui:AddDataRow DataRow="{x:Null}" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
+                          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Add the data points to the DataTable." DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="376,64" sap2010:WorkflowViewState.IdRef="AddDataRow_2">
                             <ui:AddDataRow.ArrayRow>
                               <InArgument x:TypeArguments="s:Object[]">
                                 <mca:CSharpValue x:TypeArguments="s:Object[]" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">new String[] { dataPointName, dataPointPhone, dataPointBirthdate, dataPointEmail, dataPointCity, dataPointState, dataPointZip };</mca:CSharpValue>
@@ -463,6 +468,11 @@
                                 <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">dataTable</mca:CSharpReference>
                               </InOutArgument>
                             </ui:AddDataRow.DataTable>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </ui:AddDataRow>
                         </Sequence>
                       </ui:InterruptibleDoWhile.Body>
@@ -478,7 +488,7 @@
               </uix:NApplicationCard.TargetApp>
             </uix:NApplicationCard>
           </Sequence>
-          <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Name" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="476,22" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" SortOrder="Ascending">
+          <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sort Ascending by Name." ColumnName="Name" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="572,53" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" SortOrder="Ascending">
             <ui:SortDataTable.DataTable>
               <InArgument x:TypeArguments="sd:DataTable">
                 <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">dataTable</mca:CSharpValue>
@@ -489,8 +499,13 @@
                 <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">dataTable</mca:CSharpReference>
               </OutArgument>
             </ui:SortDataTable.OutputDataTable>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
           </ui:SortDataTable>
-          <Sequence DisplayName="Sequence Write File" sap:VirtualizedContainerService.HintSize="476,481" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Sequence Write File" sap:VirtualizedContainerService.HintSize="572,481" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -502,7 +517,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Do Excel" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -538,7 +553,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="522,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="618,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
