@@ -8,6 +8,18 @@ This project is my solution in **C#** to the **Get & Sort Data** practice found 
 
 After making a pull request or downloading the project, open the Main.xaml in UiPath Studio.  The robot can be run with the play button in the ribbon and the result can be seen in output pane.
 
+#### PRACTICE REQUIREMENTS
+
+###### **Practice 1 - Get and Sort Data**
+
+Create a workflow that generates 10 fake names along with their details and then sorts them in an excel file that will be organized in 5 columns namely: Name, Phone, Birth-date, Email-Address and City, State, Zip. After sorting all the details, the workflow should continue to save the excel file in a specified folder.
+
+**Notes:** 
+
+- Use the [www.fakepersongenerator.com](https://www.fakepersongenerator.com/) site to generate the 10 fake names along with their details.
+- All selectors must not contain idx attributes.
+- All of the activities starting with the first record generation to the last activity which is saving the excel file in a specific folder should be processed in one workflow execution.
+
 ### Details
 
 **Course:** UiPath - RPA Developer Foundation
