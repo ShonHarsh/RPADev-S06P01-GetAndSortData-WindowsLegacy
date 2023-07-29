@@ -1,4 +1,4 @@
-![](https://shonharsh.github.io/curriculum-vitae/images/banner-uipath.png)
+![](https://shonharsh.github.io/curriculum-vitae/Images/Banner-UiPath-01.png)
 
 # S06P01 Get & Sort Data
 
@@ -34,7 +34,7 @@ Create a workflow that generates 10 fake names along with their details and then
 
 ### Sample Output
 
-```
+```sh
 05/07/2024 14:55:43 => [Debug] Debug started for file: Main
 05/07/2024 14:55:44 => [Info] RPADev-S06P01-GetAndSortData-WindowsLegacy execution started
 05/07/2024 14:55:54 => [Debug] Audit: Using Web App. Browser: Chrome URL: https://www.fakepersongenerator.com/
@@ -48,15 +48,19 @@ A standard UiPath, Studio to Orchestrator cloud setup is the base of operation. 
 1. An Orchestrator connection - Visit https://cloud.uipath.com/ and authenticate or sign up.
 2. [UiPath Studio](https://www.uipath.com/product/studio) is used to run the robot.  Note that Studio Web can be used directly in Orchestrator but I recommend installing the Studio IDE application.
 
+[![UiPath Setup Guide](https://shonharsh.github.io/curriculum-vitae/Images/Title-UiPath-Setup-Guide.png)](https://github.com/ShonHarsh/UiPath-SetupGuide)
+
 ### Git Notes
 
 Clone the project to develop or change it.
 
-`git clone https://github.com/ShonHarsh/RPADev-S06P01-GetAndSortData-WindowsLegacy`
+```sh
+git clone https://github.com/ShonHarsh/RPADev-S06P01-GetAndSortData-WindowsLegacy
+```
 
 ### Links
 - [UiPath Automation Platform](https://www.uipath.com/)
-- [UiPath Studio](https://www.uipath.com/product/studio)
+- [UiPath Studio](https://www.uipath.com/product/studio)- [Pulsar](https://pulsar-edit.dev/) (Atom Successor) - Used for all my README.md files
 - [Shon Harsh Website 127.0.0.1](https://shonharsh.github.io/curriculum-vitae/index.html)
 - [This.GitHub](https://github.com/shonharsh)
 - [LinkedIn](https://www.linkedin.com/in/shonharsh/)
