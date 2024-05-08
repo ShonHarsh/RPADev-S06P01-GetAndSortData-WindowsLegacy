@@ -1,12 +1,12 @@
 {
-  "name": "RPADev-S06P01-GetAndSortData",
+  "name": "RPADev-S06P01-GetAndSortData-WindowsLegacy",
+  "projectId": "eb26dbc6-d496-4fea-ad28-4d0673f85f08",
   "description": "Practice 1 - Get and Sort Data\r\n\r\nCreate a workflow that generates 10 fake names along with their details and then sorts them in an excel file that will be organized in 5 columns namely: Name, Phone, Birth-date, Email-Address and City, State, Zip. After sorting all the details, the workflow should continue to save the excel file in a specified folder.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.10.4]",
-    "UiPath.Mail.Activities": "[1.10.5]",
-    "UiPath.System.Activities": "[21.4.1]",
-    "UiPath.UIAutomation.Activities": "[21.4.4]"
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.System.Activities": "[24.3.1]",
+    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -15,16 +15,21 @@
   "projectVersion": "1.0.0",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -37,7 +42,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "saveToCloud": false
   },
   "expressionLanguage": "CSharp",
   "entryPoints": [
