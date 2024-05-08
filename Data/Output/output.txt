@@ -1,0 +1,5 @@
+05/07/2024 14:55:43 => [Debug] Debug started for file: Main
+05/07/2024 14:55:44 => [Info] RPADev-S06P01-GetAndSortData-WindowsLegacy execution started
+05/07/2024 14:55:54 => [Debug] Audit: Using Web App. Browser: Chrome URL: https://www.fakepersongenerator.com/
+05/07/2024 14:58:04 => [Debug] The file has been written: Data\Output\RPADev-S05P05-DataScraping.csv
+05/07/2024 14:58:04 => [Info] RPADev-S06P01-GetAndSortData-WindowsLegacy execution ended in: 00:02:20
